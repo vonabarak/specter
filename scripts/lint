@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -e
+set -x
+
+
+flake8 main specter
+
+black --check . --diff
+isort --recursive --check-only .

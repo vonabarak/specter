@@ -1,0 +1,8 @@
+{% extends 'admin/change_list.html' %}
+
+{% block object-tools %}
+    <div style="padding: 10px;">
+        <a href="import-files/" class="button" style="padding: 10px">Import files</a>
+    </div>
+    {{ block.super }}
+{% endblock %}

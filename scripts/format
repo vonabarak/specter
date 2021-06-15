@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -e
+
+isort --recursive .
+autoflake --recursive --remove-all-unused-imports --remove-unused-variables --in-place .
+black .
+isort --recursive .
